@@ -1,0 +1,15 @@
+{
+  "name": "blackboard",
+  "version": "1.0.0",
+  "description": "BlackBoard For Work",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm index.js"
+  },
+  "author": "Ditmar",
+  "license": "MIT",
+  "dependencies": {
+    "ocanvas": "^2.10.0"
+  }
+}

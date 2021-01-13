@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="init();">
+    <canvas id="demoCanvas" width="500" height="300"></canvas>
+    <script>
+        function init() {
+            var canvas1 = document.getElementById("demoCanvas");
+            var context = canvas1.getContext("2d");
+            var stage = new createjs.Stage("demoCanvas");
+            var circle = new createjs.Shape();
+            var borrador = new createjs.Shape();
+            stage.addChild(circle);
+            stage.addChild(borrador);
+            circle.graphics.setStrokeStyle(1).beginStroke("#000000");
+            //borrador.graphics.beginFill("#fff").drawCircle(40, 70, 20);
+            circle.graphics.moveTo(0,0);
+            circle.graphics.lineTo(100,100);
+            circle.graphics.lineTo(30,200);
+            circle.graphics.lineTo(230,200);
+            context.lineTo(0, 0, 150, 400)
+            circle.graphics.endStroke();
+            circle.x = 100;
+            circle.y = 100;
+            
+            //stage.update();
+            circle.x = 0;
+            circle.y = 0;
+            //stage.update();
+        }
+    </script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+</body>
+</html>

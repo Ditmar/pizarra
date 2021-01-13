@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: white;
+        }
+
+        #canvas {
+            background: white;
+            box-shadow: 0px 0px 5px black;
+
+        }
+    </style>
+    <title>Pizarra</title>
+</head>
+
+<body>
+
+    <button id="eraser">
+        Borrar
+    </button>
+    <button id="draw">
+        Pintar
+    </button>
+    <button id="red">
+        Rojo
+    </button>
+    <button id="blue">
+        Azul
+    </button>
+    <button id="yellow">
+        Amarillo
+    </button>
+    <button id="green">
+        Verde
+    </button>
+    <button id="delete">
+        Borrar
+    </button>
+    <button id="putdraw">
+        Colocar
+    </button>
+    <br />
+    <canvas id="canvas" width="1200" , height="700">
+    </canvas>
+
+    <script type="module" src="./Tools/ui.js">
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.10.0/ocanvas.min.js">
+    </script>
+</body>
+
+</html>
